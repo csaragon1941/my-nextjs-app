@@ -1,0 +1,72 @@
+.projectcontainer {
+  background-color: #333;
+  color: white;
+  padding: 150px;
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.projectWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: calc(100% - 40px); /* Adjust width to accommodate margins */
+  margin-left: 20px; /* Add margin to the left side */
+  margin-right: 20px; /* Add margin to the right side */
+}
+
+.projectText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px; /* Add right padding to create space between text and image */
+}
+/*FOR THE PROJECT TEXT YOU NEEC TO MAKE ALL THE TEXT IN THE right margin or left margin */
+
+.project {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: Inter, sans-serif; /* Apply Inter font to the title */
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: "IBM Plex Mono", monospace; /* Apply IBM Plex Mono font to the description */
+}
+
+
+.info {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: "IBM Plex Mono", monospace; /* Apply IBM Plex Mono font to the description */
+}
+
+.info {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative; /* Necessary for positioning the pseudo-element */
+  cursor: pointer; /* Add pointer cursor to indicate link */
+}
+
+.info::after {
+  content: '→'; /* Unicode for right arrow */
+  font-size: 14px;
+  margin-left: 8px; /* Space between text and arrow */
+  transition: margin-left 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.info:hover::after {
+  margin-left: 12px; /* Move arrow slightly to the right on hover */
+}
+
+.projectimage {
+  max-width: 180px; /* Set a maximum width for responsiveness */
+  max-height: 208px; /* Set a maximum height for responsiveness */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make it circular */
+  margin-left: 20px; /* Add left margin to create space between image and text */
+}

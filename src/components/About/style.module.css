@@ -1,0 +1,54 @@
+.parentcontainer {
+  display: flex; /* Make the parent a flex container */
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Example background for the parent */
+}
+
+.container {
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+  display: flex; /* Make the container a flex container */
+  flex-direction: row; /* Arrange children in a row */
+  gap: 50px; /* Add some space between the columns */
+  background-color: #333; /* Background color for the container */
+  color: white; /* Text color for better visibility */
+}
+
+.column {
+  flex: 1; /* Take up equal space */
+}
+
+.section {
+  flex: 1; /* Take up equal space */
+}
+
+/* Style section titles */
+.section h2 {
+  font-size: 24px;
+  color: #666;
+  padding-bottom: 10px;
+}
+
+/* Style section content */
+.section p {
+  font-size: 16px;
+  color: #999;
+  padding-bottom: 10px; 
+}
+
+
+/* Style column content */
+.column h2 {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.column p {
+  font-size: 16px;
+  color: #999;
+}
